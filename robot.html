@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="sv">
+<link rel="stylesheet" href="slider.css">
+</head>
+<body>
+ <nav><ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="robot.html">Robot</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul> </nav>
+<main>
+<article> 
+<h1>Roboten</h1> 
+tesssttckkavnoasvnoasvnoas
+
+</main>
+
+
+<footer> 
+ <div class="row">
+<div class="column1">International Design, 2018</div>
+  <div class="column">Kontakt</div>
+  <div class="column">Återförsäljare</div>
+  <div class="column">Sida om robot</div>
+  <div class="column">Till toppen</div>
+</div> 
+</footer></body>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
+
+
